@@ -6,7 +6,7 @@ namespace GitUI
     {
         public static Color GetForeColorForBackColor(Color backColor)
         {
-            return IsLightColor(backColor) ? Color.Black : Color.White;
+            return IsLightColor(backColor) ? Color.Black : Color.LightGray;
         }
 
         public static bool IsLightColor(this Color color)
