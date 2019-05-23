@@ -286,7 +286,7 @@ namespace GitUI.Hotkey
                     Hk(FormBrowse.Command.GoToSuperproject, Keys.None),
                     Hk(FormBrowse.Command.OpenAsTempFile, OpenAsTempFileHotkey),
                     Hk(FormBrowse.Command.OpenAsTempFileWith, OpenAsTempFileWithHotkey),
-                    Hk(FormBrowse.Command.OpenSettings, Keys.Control | Keys.Oemcomma),
+                    Hk(FormBrowse.Command.OpenSettings, Keys.F8),
                     Hk(FormBrowse.Command.OpenWithDifftool, OpenWithDifftoolHotkey),
                     Hk(FormBrowse.Command.OpenWithDifftoolFirstToLocal, OpenWithDifftoolFirstToLocalHotkey),
                     Hk(FormBrowse.Command.OpenWithDifftoolSelectedToLocal, OpenWithDifftoolSelectedToLocalHotkey),

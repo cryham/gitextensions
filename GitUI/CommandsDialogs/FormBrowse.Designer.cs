@@ -1571,7 +1571,7 @@ namespace GitUI.CommandsDialogs
             // 
             this.settingsToolStripMenuItem.Image = global::GitUI.Properties.Images.Settings;
             this.settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
-            this.settingsToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Oemcomma)));
+            this.settingsToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.F8)));
             this.settingsToolStripMenuItem.Size = new System.Drawing.Size(217, 22);
             this.settingsToolStripMenuItem.Text = "Settings";
             this.settingsToolStripMenuItem.Click += new System.EventHandler(this.OnShowSettingsClick);
