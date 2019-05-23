@@ -247,17 +247,26 @@ namespace GitUI.CommandsDialogs
 
             ManageWorktreeSupport();
 
-            var toolBackColor = Color.FromArgb(218, 218, 218);
+            var toolBackColor = SystemColors.Window;
+            var toolForeColor = SystemColors.WindowText;
             BackColor = toolBackColor;
+            ForeColor = toolForeColor;
             ToolStrip.BackColor = toolBackColor;
+            ToolStrip.ForeColor = toolForeColor;
             toolStripRevisionFilterDropDownButton.BackColor = toolBackColor;
+            toolStripRevisionFilterDropDownButton.ForeColor = toolForeColor;
             menuStrip1.BackColor = toolBackColor;
+            menuStrip1.ForeColor = toolForeColor;
             toolPanel.TopToolStripPanel.BackColor = toolBackColor;
+            toolPanel.TopToolStripPanel.ForeColor = toolForeColor;
             statusStrip.BackColor = toolBackColor;
+            statusStrip.ForeColor = toolForeColor;
 
-            var toolTextBoxBackColor = Color.FromArgb(235, 235, 235);
+            var toolTextBoxBackColor = SystemColors.Window;
             toolStripBranchFilterComboBox.BackColor = toolTextBoxBackColor;
+            toolStripBranchFilterComboBox.ForeColor = toolForeColor;
             toolStripRevisionFilterTextBox.BackColor = toolTextBoxBackColor;
+            toolStripRevisionFilterTextBox.ForeColor = toolForeColor;
 
             // Scale tool strip items according to DPI
             toolStripBranchFilterComboBox.Size = DpiUtil.Scale(toolStripBranchFilterComboBox.Size);
