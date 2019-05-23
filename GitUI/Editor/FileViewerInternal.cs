@@ -60,10 +60,11 @@ namespace GitUI.Editor
                         TextEditor.ActiveTextAreaControl.TextArea.TextView.GetLogicalLine(e.Y)));
             };
 
-            HighlightingManager.Manager.DefaultHighlighting.SetColorFor("LineNumbers", new HighlightColor(Color.FromArgb(80, 0, 0, 0), Color.White, false, false));
+            HighlightingManager.Manager.DefaultHighlighting.SetColorFor("LineNumbers", new HighlightColor(Color.FromArgb(80, 0, 0, 0), Color.Black, false, false));
             TextEditor.ActiveTextAreaControl.TextEditorProperties.EnableFolding = false;
 
             _lineNumbersControl = new DiffViewerLineNumberControl(TextEditor.ActiveTextAreaControl.TextArea);
+            _lineNumbersControl.SetVisibility(false);
 
             VRulerPosition = AppSettings.DiffVerticalRulerPosition;
         }
@@ -113,7 +114,7 @@ namespace GitUI.Editor
 
             OpenWithDifftool = openWithDifftool;
             _lineNumbersControl.Clear(isDiff);
-            _lineNumbersControl.SetVisibility(isDiff);
+            _lineNumbersControl.SetVisibility(false); // isDiff);
 
             if (isDiff)
             {

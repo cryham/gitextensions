@@ -13,7 +13,7 @@ namespace GitUI.Editor.Diff
         private const int TextHorizontalMargin = 4;
         private static readonly IReadOnlyDictionary<int, DiffLineInfo> Empty = new Dictionary<int, DiffLineInfo>();
         private IReadOnlyDictionary<int, DiffLineInfo> _diffLines = Empty;
-        private bool _visible = true;
+        private bool _visible = false;
 
         public DiffViewerLineNumberControl(TextArea textArea)
             : base(textArea)
