@@ -64,7 +64,6 @@ namespace GitUI.Editor
             TextEditor.ActiveTextAreaControl.TextEditorProperties.EnableFolding = false;
 
             _lineNumbersControl = new DiffViewerLineNumberControl(TextEditor.ActiveTextAreaControl.TextArea);
-            _lineNumbersControl.SetVisibility(false);
 
             VRulerPosition = AppSettings.DiffVerticalRulerPosition;
         }
@@ -113,8 +112,15 @@ namespace GitUI.Editor
             _currentViewPositionCache.Capture();
 
             OpenWithDifftool = openWithDifftool;
+            if (!AppSettings.ShowLineNumbers)
+            {
+                isDiff = false;
+            }
+
+            TextEditor.ShowLineNumbers = false;
+
             _lineNumbersControl.Clear(isDiff);
-            _lineNumbersControl.SetVisibility(false); // isDiff);
+            _lineNumbersControl.SetVisibility(isDiff);
 
             if (isDiff)
             {
