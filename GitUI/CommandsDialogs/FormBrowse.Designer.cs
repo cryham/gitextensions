@@ -628,7 +628,7 @@ namespace GitUI.CommandsDialogs
             // 
             this.toolStripRevisionFilterTextBox.BackColor = System.Drawing.SystemColors.Control;
             this.toolStripRevisionFilterTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.toolStripRevisionFilterTextBox.ForeColor = System.Drawing.Color.Black;
+            this.toolStripRevisionFilterTextBox.ForeColor = System.Drawing.SystemColors.ControlText;
             this.toolStripRevisionFilterTextBox.Name = "toolStripRevisionFilterTextBox";
             this.toolStripRevisionFilterTextBox.Size = new System.Drawing.Size(100, 25);
             // 
