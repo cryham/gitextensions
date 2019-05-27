@@ -130,8 +130,10 @@ namespace GitUI.CommandsDialogs
             : base(commands)
         {
             InitializeComponent();
+
             bool light = ColorHelper.IsLightTheme();
             translateToolStripMenuItem.Image = light ? Images.Translate : Images.Translate_inv;
+            recoverLostObjectsToolStripMenuItem.Image = light ? Images.RecoverLostObjects : Images.RecoverLostObjects_inv;
 
             commandsToolStripMenuItem.DropDownOpening += CommandsToolStripMenuItem_DropDownOpening;
 

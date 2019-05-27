@@ -111,6 +111,7 @@ namespace GitUI.Editor
             SetStateOfContextLinesButtons();
 
             showNonPrintChars.Image = light ? Images.ShowWhitespace : Images.ShowWhitespace_inv;
+            showNonprintableCharactersToolStripMenuItem.Image = showNonPrintChars.Image;
             showNonPrintChars.Checked = AppSettings.ShowNonPrintingChars;
             showNonprintableCharactersToolStripMenuItem.Checked = AppSettings.ShowNonPrintingChars;
             ToggleNonPrintingChars(AppSettings.ShowNonPrintingChars);
