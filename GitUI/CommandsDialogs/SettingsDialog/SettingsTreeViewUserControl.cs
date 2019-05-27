@@ -69,6 +69,7 @@ namespace GitUI.CommandsDialogs.SettingsDialog
             }
 
             node.Tag = page;
+            node.Expand();
             _pages2NodeMap.Add(page.PageReference, node);
             _settingsPages.Add(page);
         }
