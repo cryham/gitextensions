@@ -246,7 +246,7 @@ namespace GitUI.UserControls.RevisionGrid
 
             return AppSettings.RevisionGraphDrawNonRelativesTextGray && !RowIsRelative(rowIndex)
                 ? Color.Gray
-                : ColorHelper.IsLightColor(SystemColors.Window) ? Color.Black : Color.LightGray;
+                : ColorHelper.IsLightTheme() ? Color.Black : Color.LightGray;
         }
 
         private Brush GetBackground(DataGridViewElementStates state, int rowIndex, GitRevision revision)

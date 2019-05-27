@@ -63,7 +63,7 @@ namespace GitUI
         {
             var oldMode = graphics.SmoothingMode;
             graphics.SmoothingMode = SmoothingMode.AntiAlias;
-            bool light = ColorHelper.IsLightColor(SystemColors.Window);
+            bool light = ColorHelper.IsLightTheme();
 
             try
             {

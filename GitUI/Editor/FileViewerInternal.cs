@@ -61,7 +61,7 @@ namespace GitUI.Editor
             };
 
             HighlightingManager.Manager.DefaultHighlighting.SetColorFor("LineNumbers",
-                ColorHelper.IsLightColor(SystemColors.Window) ?
+                ColorHelper.IsLightTheme() ?
                     new HighlightColor(Color.FromArgb(80, 0, 0, 0), Color.White, false, false) :
                     new HighlightColor(Color.FromArgb(180, 160, 160, 160), Color.Black, false, false));
             TextEditor.ActiveTextAreaControl.TextEditorProperties.EnableFolding = false;

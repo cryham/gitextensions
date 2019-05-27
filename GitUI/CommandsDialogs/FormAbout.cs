@@ -22,7 +22,7 @@ namespace GitUI.CommandsDialogs
 
             environmentInfo.SetCopyButtonTooltip(_copyTooltip.Text);
 
-            Color clrLink = ColorHelper.IsLightColor(SystemColors.Window) ? Color.Blue : Color.SkyBlue;
+            Color clrLink = ColorHelper.IsLightTheme() ? Color.Blue : Color.SkyBlue;
             _NO_TRANSLATE_labelProductName.LinkColor = clrLink;
             _NO_TRANSLATE_ThanksTo.LinkColor = clrLink;
             linkLabelIcons.LinkColor = clrLink;
