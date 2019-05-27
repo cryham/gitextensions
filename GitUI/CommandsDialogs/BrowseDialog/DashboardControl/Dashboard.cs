@@ -69,7 +69,7 @@ namespace GitUI.CommandsDialogs.BrowseDialog.DashboardControl
 
             void ApplyTheme()
             {
-                _selectedTheme = SystemColors.ControlText.IsLightColor() ? DashboardTheme.Dark : DashboardTheme.Light;
+                _selectedTheme = ColorHelper.IsLightTheme() ? DashboardTheme.Dark : DashboardTheme.Light;
 
                 BackColor = _selectedTheme.Primary;
                 pnlLogo.BackColor = _selectedTheme.PrimaryVeryDark;
