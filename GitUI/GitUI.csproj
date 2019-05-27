@@ -1816,6 +1816,9 @@
   <ItemGroup>
     <None Include="Resources\Icons\WhitespaceIgnoreEol_inv.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\branch_inv.png" />
+  </ItemGroup>
   <Target Name="CopyTranslations" AfterTargets="AfterBuild">
     <ItemGroup>
       <Translations Include="$(ProjectDir)Translation\*.xlf;$(ProjectDir)Translation\*.gif" />
